@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/Manuzinha1503/manu26#readme",
   "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "fs": "^0.0.1-security",
     "prompt-sync": "^4.2.0"
   }
 }

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "2",
+    "tipo": "Poodle",
+    "raca": "Poodle branco",
+    "caracteristicas": "Inteligente, pelagem encaracolada"
+  },
+  {
+    "id": "3",
+    "raca": "Holandesa",
+    "tipo": "Vaca",
+    "caracteristicas": "Leiteras, de pelo encaracolado e fofas"
+  },
+  {
+    "id": "4",
+    "raca": "Tubarão Baleia",
+    "tipo": "Baleia",
+    "caracteristicas": "É azul com manchas brancas e tem uma boca enorme"
+  },
+  {
+    "id": "5",
+    "raca": "Arara azul",
+    "tipo": "Arara",
+    "caracteristicas": "É azul"
+  },
+  {
+    "id": "6",
+    "raca": "Camaleões de Madagascar",
+    "tipo": "Camaleão",
+    "caracteristicas": "É colorido mas a sua cor predominate é o verde"
+  },
+  {
+    "id": "7",
+    "raca": "Panda Vermelho",
+    "tipo": "Panda",
+    "caracteristicas": "É vermelho com listras brancas no rabo"
+  },
+  {
+    "id": "8",
+    "raca": "Furão Albino:",
+    "tipo": "Furão",
+    "caracteristicas": "Completamente brancos com olhos vermelhos"
+  }
+]
