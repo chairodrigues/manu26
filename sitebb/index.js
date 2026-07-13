@@ -57,7 +57,7 @@ app.get('/animais/:id', (req, res) => {
                                                     
                                                      
     if (!animal) { 
-        return res.status(404).json({ message: 'Notícia não encontrada.' }); 
+        return res.status(404).json({ message: 'Pet não encontrado.' });
     } 
                                                     
                                                      
@@ -68,7 +68,7 @@ app.get('/animais/:id', (req, res) => {
 app.post('/animais', (req, res) => { 
     const { raca, tipo, caracteristicas } = req.body; 
                                                     
-    // Validações básicas 
+    // Validações básicas ( quando tu faz um envio, precisa ter esses campos)
     if (!raca || !tipo || !caracteristicas) { 
         return res.status(400).json({ message: 'Raça, tipo e características são obrigatórios.' }); 
    } 
@@ -137,6 +137,31 @@ app.delete('/animais/:id', (req, res) => {
     writeData(animais);
 
     res.json({ message: 'Bixin removido com sucesso.' }); 
+}); 
+
+
+$(document).ready(function () { 
+
+ 
+        // Função para carregar as notícias 
+        function carregarNoticias() { 
+            $.get("http://localhost:3000/animais", function (data, status) { 
+                $('#bixo').empty(); 
+                $('#bixo').append('<h1>Listagem de Animais</h1>'); 
+                data.forEach(function (animal) { 
+                    $('#bixo').append( 
+                        `<div class="card-animal"> 
+                            <h3>${animal.raca}</h3> 
+                            <p>${animal.tipo}</p> 
+                            <p>${animal.caracteristicas}</p> 
+                        </div>` 
+                    ); 
+                }); 
+            }); 
+        } 
+                                                
+        // Carregar as notícias ao carregar a página 
+        carregarNoticias(); 
 }); 
 
 
